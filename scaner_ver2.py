@@ -1,5 +1,4 @@
 import scapy.all as sc
-import argparse
 
 def scaner(ip):
     # arping()
@@ -15,4 +14,4 @@ def scaner(ip):
     for elem in answer_yes:
         print(elem[1].psrc + '\t\t\t' + elem[1].hwsrc)
     print(elem[1].pdst + '\t\t\t' + elem[1].hwdst)
-scaner('192.168.100.1/24')
+scaner(['192.168.100.1','192.168.100.57', '192.168.100.2'])
